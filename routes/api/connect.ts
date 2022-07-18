@@ -1,6 +1,8 @@
 import { Handlers, RouteConfig } from "$fresh/server.ts";
 import { RoomChannel } from "@/communication/channel.ts";
 
+// test
+
 export const handler: Handlers = {
   GET(_req, ctx) {
     const channel = new RoomChannel(+ctx.params.room);
